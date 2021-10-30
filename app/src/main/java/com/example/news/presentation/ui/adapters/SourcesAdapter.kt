@@ -10,8 +10,8 @@ import com.example.news.base.BaseLoading
 import com.example.news.databinding.ItemLoadingBinding
 import com.example.news.databinding.ItemSourcesBinding
 import com.example.news.domain.models.Sources
-import com.example.news.utils.Constants
-import com.example.news.utils.Constants.ITEM
+import com.example.news.common.constants.Constants
+import com.example.news.common.constants.Constants.ITEM
 
 
 class SourcesAdapter :

@@ -1,14 +1,13 @@
-package com.example.news.utils
+package com.example.news.common.extensions
 
-import android.annotation.SuppressLint
 import android.content.Context
-import android.icu.text.SimpleDateFormat
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.news.base.PaginationScrollListener
 import java.text.ParseException
+import java.text.SimpleDateFormat
 import java.util.*
 
 var isLoading = false
@@ -55,12 +54,11 @@ fun RecyclerView.scrollPagination(getData: () -> Unit) {
     })
 }
 
-@SuppressLint("SimpleDateFormat", "NewApi")
 fun dateFormatter(oldStringDate: String?): String? {
     if (oldStringDate == null || oldStringDate == "")
         return ""
     val newDate: String?
-    val dateFormat = SimpleDateFormat("E, d MMM yyyy", Locale(getCountry()))
+    val dateFormat = SimpleDateFormat("E, d MMM yyyy", Locale.ENGLISH)
     newDate = try {
         val date: Date = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").parse(oldStringDate)
         dateFormat.format(date)
@@ -70,8 +68,5 @@ fun dateFormatter(oldStringDate: String?): String? {
     }
     return newDate
 }
-
-private fun getCountry(): String =
-    Locale.getDefault().country.lowercase(Locale.ROOT)
 
 

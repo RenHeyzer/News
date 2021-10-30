@@ -10,10 +10,10 @@ import com.example.news.base.BaseLoading
 import com.example.news.databinding.ItemEverythingBinding
 import com.example.news.databinding.ItemLoadingBinding
 import com.example.news.domain.models.Everything
-import com.example.news.utils.Constants.ITEM
-import com.example.news.utils.Constants.LOADING
-import com.example.news.utils.dateFormatter
-import com.example.news.utils.loadImage
+import com.example.news.common.constants.Constants.ITEM
+import com.example.news.common.constants.Constants.LOADING
+import com.example.news.common.extensions.dateFormatter
+import com.example.news.common.extensions.loadImage
 
 class NewsAdapter :
     ListAdapter<Everything, RecyclerView.ViewHolder>(

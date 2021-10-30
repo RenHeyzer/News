@@ -10,7 +10,7 @@ import com.example.news.domain.models.Sources
 import com.example.news.presentation.state.UIState
 import com.example.news.presentation.ui.activity.MainActivity
 import com.example.news.presentation.ui.adapters.SourcesAdapter
-import com.example.news.utils.scrollPagination
+import com.example.news.common.extensions.scrollPagination
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -4,7 +4,7 @@ import com.example.news.data.network.api.EverythingApiService
 import com.example.news.data.network.api.SourcesApiService
 import com.example.news.data.network.api.TopHeadlinesApiService
 import com.example.news.data.network.interceptors.ApiKeyInterceptor
-import com.example.news.utils.Constants
+import com.example.news.common.constants.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

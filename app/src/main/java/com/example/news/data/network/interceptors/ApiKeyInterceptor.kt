@@ -1,6 +1,6 @@
 package com.example.news.data.network.interceptors
 
-import com.example.news.utils.Constants.API_KEY
+import com.example.news.common.constants.Constants.API_KEY
 import okhttp3.Interceptor
 import okhttp3.Response
 
