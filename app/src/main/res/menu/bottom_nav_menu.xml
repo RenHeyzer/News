@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_everything"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:orderInCategory="1"
+        android:title="@string/everything" />
+
+    <item
+        android:id="@+id/nav_top_headlines"
+        android:icon="@drawable/ic_baseline_topheadlinest_24"
+        android:orderInCategory="2"
+        android:title="@string/top_headlines" />
+
+    <item
+        android:id="@+id/nav_sources"
+        android:icon="@drawable/ic_baseline_source_24"
+        android:orderInCategory="3"
+        android:title="@string/sources" />
+
+</menu>
