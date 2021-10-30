@@ -1,5 +1,6 @@
 package com.example.news.presentation.ui.fragments.topheadlines
 
+import android.util.Log
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,7 +11,6 @@ import com.example.news.presentation.state.UIState
 import com.example.news.presentation.ui.activity.MainActivity
 import com.example.news.presentation.ui.adapters.NewsAdapter
 import com.example.news.utils.scrollPagination
-import com.example.news.utils.toast
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -47,7 +47,7 @@ class TopHeadlinesFragment :
                     mAdapter.showProgressBar()
                 }
                 is UIState.Error -> {
-                    requireActivity().toast(it.error)
+                    Log.e("anime", it.error)
                     mAdapter.hideProgressBar()
                 }
                 is UIState.Success -> {
